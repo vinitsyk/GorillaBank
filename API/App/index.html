@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script defer>document.getElementById("fetchButton").addEventListener('click', () => { let valueUsername = document.querySelector('#username_form').value; let valuePassword = document.querySelector('#password_form').value; if ( valueUsername.length <= 5 ) { alert(`Invalid Forms`); window.location.reload(); } else if ( valuePassword.length <= 5 ) { alert(`Invalid Forms`); window.location.reload(); } else { alert(`OK`); } })</script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Gorilla">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');body{background-color:#121212;}.login-initial{padding-top:30%;text-align:center;} .login-initial h1{color:white;padding-top:1%;font-family:'Black Ops One';} .login-initial hr{width:50%;}.forms{padding-top:10%;text-align:center;}.forms input{color:white;font-size:20px;text-align:center;border:1px solid white;background-color:#202020;}.forms button{width:50%;padding:2%;border:none;color:white;font-size:20px;border-radius:5;background-color:#202020;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;}.footer{padding-top:80%;text-align:center;}.footer p{color:white;font-family:'Courier New',Courier,monospace;}</style>
+    <title>Gorilla Bank</title>
+</head>
+<body>
+    <div class="login-initial">
+        <h1>Gorilla Bank</h1><hr>
+    </div>
+    <div class="forms">
+        <input id="username_form" type="text" placeholder="username" value="">
+        <br><br>
+        <input id="password_form" type="password" placeholder="password" value="">
+        <br><br><br>
+        <button id="fetchButton"><b>Login</b></button>
+    </div>
+    <footer>
+        <p><b>Gorilla Solutions</b></p>
+    </footer>
+</body>
+</html>

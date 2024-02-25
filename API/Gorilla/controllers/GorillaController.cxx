@@ -18,13 +18,10 @@ class Gorilla : public drogon::HttpController<Gorilla>
         {
             try 
             {
-                const std::string& webpage = "<h1 style=\"text-align: center;\">Hello World<h1>";
-
+                const std::string& webpage = "<h1 style=\"text-align: center\">Hello World<h1>";
                 auto response = drogon::HttpResponse::newHttpResponse();
                 response->setContentTypeCode(drogon::ContentType::CT_TEXT_HTML);
                 response->setBody(webpage);
-
-                callback(response);
 
             }
             catch ( const std::exception& error ) 
